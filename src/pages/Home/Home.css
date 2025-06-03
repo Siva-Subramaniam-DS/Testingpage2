@@ -1,0 +1,21 @@
+.home-page {
+  /* Add any specific styles for the Home page here */
+  padding-top: 80px; /* Adjust based on header height */
+
+  /* Solar animation background */
+  background: linear-gradient(-45deg, #ededed, #ffffff, #ffffff, #ffffff);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

@@ -1,0 +1,111 @@
+.contact-us-section {
+  padding: 80px 0;
+  background-color: var(--background-light);
+}
+
+.contact-us-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* Styles for contact information section */
+
+.contact-info h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+  color: var(--text-secondary);
+}
+
+.contact-item .contact-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--primary-color);
+}
+
+.contact-item a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: var(--text-primary);
+}
+
+.contact-item span {
+  flex-grow: 1;
+}
+
+/* Styles for form wrapper */
+
+.contact-form-wrapper h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+}
+
+.map-container {
+  margin-top: 20px;
+  width: 100%;
+  /* Adjust height as needed, or keep aspect ratio with padding-top */
+  height: 0;
+  padding-bottom: 75%; /* 4:3 Aspect Ratio (450 / 600 = 0.75) */
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1024px) {
+  .contact-us-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-us-section {
+    padding: 60px 0;
+  }
+
+  .contact-us-content {
+    flex-direction: column;
+  }
+
+  .contact-info,
+  .contact-form-wrapper {
+    width: 100%;
+  }
+
+  .contact-info {
+    margin-bottom: 40px;
+  }
+
+  .contact-info h3,
+  .contact-form-wrapper h3 {
+    font-size: 1.5rem;
+  }
+
+  .map-container {
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio on smaller screens */
+  }
+}
