@@ -71,7 +71,6 @@ const Solutions = () => {
               </ul>
               <div className="solution-cta">
                 <a href="/services" className="solution-link">
-                  Learn More
                 </a>
               </div>
             </div>

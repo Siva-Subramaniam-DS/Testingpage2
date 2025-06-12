@@ -6,18 +6,20 @@ import Solutions from '../../components/Solutions/Solutions'
 import About from '../../components/About/About'
 import DroneVideo from '../../components/DroneVideo/DroneVideo'
 import Gallery from '../../components/Gallery/Gallery'
+import BenefitsAndStrategies from '../../components/BenefitsAndStrategies/BenefitsAndStrategies'
 import './Home.css'
 
 const Home = () => {
   return (
     <div className="home-page">
       <Hero />
-      <Services />
-      <DroneVideo />
-      <Gallery />
-      <ConsultationForm />
-      <Solutions />
       <About />
+      <DroneVideo />
+      <BenefitsAndStrategies />
+      <Gallery />
+      <Solutions />
+      <Services />
+      <ConsultationForm />
     </div>
   )
 }

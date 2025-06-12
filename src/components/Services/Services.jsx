@@ -70,7 +70,7 @@ const Services = () => {
                 ))}
               </ul>
               <a href="/services" className="service-link">
-                Learn More <ArrowRight size={16} />
+            
               </a>
             </div>
           ))}

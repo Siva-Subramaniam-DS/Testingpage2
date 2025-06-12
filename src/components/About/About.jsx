@@ -62,7 +62,6 @@ const About = () => {
 
             <div className="about-cta">
               <a href="/about" className="about-link">
-                Learn More About Us
               </a>
             </div>
           </div>

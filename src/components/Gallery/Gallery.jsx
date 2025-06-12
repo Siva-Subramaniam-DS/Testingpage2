@@ -12,7 +12,7 @@ import S6 from '../../assets/images/S6.jpg';
 import S7 from '../../assets/images/S7.jpg';
 import S8 from '../../assets/images/S8.jpg';
 import S9 from '../../assets/images/S9.jpg';
-import S10 from '../../assets/images/S10.jpg';
+
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -28,7 +28,7 @@ const Gallery = () => {
     { id: 7, src: S7, alt: 'Solar Installation 7' },
     { id: 8, src: S8, alt: 'Solar Installation 8' },
     { id: 9, src: S9, alt: 'Solar Installation 9' },
-    { id: 10, src: S10, alt: 'Solar Installation 10' },
+
   ];
 
   const openLightbox = (image, index) => {
